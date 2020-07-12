@@ -2,6 +2,7 @@ package com.example.homework
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 
@@ -21,5 +22,7 @@ class MainActivity : AppCompatActivity() {
         val thirdTVInArray = findViewById<TextView>(R.id.thirdTVInArray)
         val fourthTVInArray = findViewById<TextView>(R.id.fourthTVInArray)
         val fifthTVInArray = findViewById<TextView>(R.id.fifthTVInArray)
+
+        val btnInArray = findViewById<Button>(R.id.btnInArray)
     }
 }

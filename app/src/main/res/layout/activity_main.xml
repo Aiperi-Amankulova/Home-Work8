@@ -107,7 +107,7 @@
         android:textSize="20dp"/>
 
     <Button
-        android:id="@+id/buttonInArray"
+        android:id="@+id/btnInArray"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
