@@ -42,7 +42,7 @@ class MainActivity : AppCompatActivity() {
 
         val a2 = 45
         val b2 = 3.14
-        val c2 = a2 * b2
+        val c2 = a2 * b2 
         secondTVInArray.text = c2.toString()
 
         val a3 = 234
@@ -60,7 +60,23 @@ class MainActivity : AppCompatActivity() {
         val c5 = a5 * b5
         fifthTVInArray.text = c5.toString()
 
+        val preference = getSharedPreferences("Preference", Context.MODE_PRIVATE)
 
+        btnInArray.setOnClickListener {
+            val firstET = firstETInArray.text.toString()
+            preference.edit().putString("firstET", firstET).apply()
+
+            val secondET = secondETInArray.text.toString()
+            preference.edit().putString("secondET", secondET).apply()
+
+            val thirdET = thirdETInArray.text.toString()
+            preference.edit().putString("thirdET", thirdET).apply()
+
+            val fourthET = fourthETInArray.text.toString()
+            preference.edit().putString("fourthET", fourthET).apply()
+
+            val fifthET = fifthETInArray.text.toString()
+            preference.edit().putString("fifthET", fifthET).apply()
         }
     }
 }
